@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Roboto',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    margin:2% 12% 0 12%;
+   
+    font-weight: 400;
+}
+
+.main-container{
+    
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin-top: 3%;
+    
+    
+    
+}
+.main-container-img{
+    
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    
+    
+}
+.main-container-img a img{
+    width: 200px;
+    cursor: pointer;
+}
+.btn{
+    
+    padding: 5px;
+    background-color:black;
+    display: none;
+    border-radius: 20%;
+    
+}
+.btn i{
+    color: white;
+}
+.nav-links{
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+
+    
+}
+.nav-links-1{
+
+    justify-content: center;
+    margin-top: 4%;
+    width: 100%;
+    display: block;
+    text-align: center;
+ 
+   display:none;
+    
+}
+.nav-links-1 li{
+    border-top: 1px solid gray;
+    padding: 2.3%;
+}
+
+.nav-links-1 a{
+
+    width: 100%;
+   
+    font-family: 'Nunito',sans-serif;
+    text-transform: capitalize;
+    color: black;
+    font-style: bold;
+    font-weight: 550;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+
+}
+.nav-links a{
+    
+    font-family: 'Nunito',sans-serif;
+    text-transform: capitalize;
+    color: black;
+    font-style: bold;
+    font-weight: 550;
+    cursor: pointer;
+    margin-left:25px;
+    font-size: 16px;
+
+}
+.contact{
+    width: 100%;
+  text-align: end;
+}
+.nav-links :hover a{
+    color: #645cff;
+    transition: 1s;
+}
+.nav-links-1 :hover a{
+    color: #645cff;
+    transition: 1s;
+}
+.contact{
+    width: 100%;
+  text-align: end;
+  
+}
+
+  .contact button{
+    
+    background-color: #645cff;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 33px;
+    font-size: 18px;
+    cursor: pointer;
+} 
+.contact-1{
+    width: 100%;
+  text-align: center;
+    
+
+    border-top: 1px solid gray;
+
+}
+
+.contact-1 button{
+    
+    background-color: #645cff;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 33px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+ button:hover{
+
+    background-color: #1b158a;
+}
+
+header {
+    margin-top: 6%;
+    margin-bottom: 2%;
+}
+header h4{
+    font-family: 'Nunito',sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+.recipes  img{
+
+
+    height: 11rem;
+    width: 100%;
+    object-fit: cover;
+    
+    border-radius: 2%;
+}
+
+.recipes-list{
+    
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 1rem;
+    
+}
+.recipes{
+    display: block;
+    letter-spacing: 1px;
+    
+}
+.recipes h5{
+    margin-top: 1%;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 400;
+    font-family: 'Nunito',sans-serif;
+}
+.recipes p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    color:black ;
+    font-weight: 100;
+}
+
+
+.last-container{
+    width: 100%;
+
+    display: flex;
+    background-color: black;
+    height: 4rem;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.first-p{
+    
+    color: white;
+}
+.logo{
+    color: #645cff;
+}
+.last-container a{
+    color: #645cff;
+}
+
+@media(max-width:1280px)
+{
+    body{
+        margin: 1% 5% 0% 5%;
+    }
+}
+@media(max-width:1200px)
+{
+    .recipes-list{
+
+        grid-template-columns: 1fr 1fr;       
+        
+    }
+}
+@media(max-width:960px)
+{
+    
+    .active{
+        display: block;
+        
+    }
+    .nav-links{
+        display:none;
+    }
+    .btn{
+     display: block;   
+    }
+    
+    .main-container-img{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+}
+@media(max-width:750px)
+{
+
+    .nav-links-1{
+        margin-top: 10%;
+    }
+    .nav-links-1 li{
+        
+        padding: 2.5%;
+    }
+}
+@media(max-width:550px)
+{
+
+    .nav-links-1{
+        margin-top: 10%;
+    }
+    .nav-links-1 li{
+        
+        padding: 5%;
+    }
+}
+@media(max-width:575px)
+{
+    .recipes-list{
+
+        grid-template-columns: 1fr ;       
+        
+    }
+    .last-container{
+        margin-top: 12%;
+    }
+}
+@media(max-width:484px)
+{
+   
+    .nav-links-1{
+        margin-top: 7%;
+    }
+    .nav-links-1 li{
+        
+        padding: 4%;
+    }
+}

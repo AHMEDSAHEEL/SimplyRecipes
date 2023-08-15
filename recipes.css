@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    margin:2% 12% 0 12%;
+   
+    font-weight: 400;
+}
+
+.main-container{
+    
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin-top: 3%;
+    
+    
+    
+}
+.main-container-img{
+    
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    
+    
+}
+.main-container-img a img{
+    width: 200px;
+    cursor: pointer;
+}
+.btn{
+    
+    padding: 5px;
+    background-color:black;
+    display: none;
+    border-radius: 20%;
+    
+}
+.btn i{
+    color: white;
+}
+.nav-links{
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+
+    
+}
+.nav-links-1{
+
+    justify-content: center;
+    margin-top: 4%;
+    width: 100%;
+    display: block;
+    text-align: center;
+ 
+   display:none;
+    
+}
+.nav-links-1 li{
+    border-top: 1px solid gray;
+    padding: 2.3%;
+}
+
+.nav-links-1 a{
+
+    width: 100%;
+   
+    font-family: 'Nunito',sans-serif;
+    text-transform: capitalize;
+    color: black;
+    font-style: bold;
+    font-weight: 550;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+
+}
+.nav-links a{
+    
+    font-family: 'Nunito',sans-serif;
+    text-transform: capitalize;
+    color: black;
+    font-style: bold;
+    font-weight: 550;
+    cursor: pointer;
+    margin-left:25px;
+    font-size: 16px;
+
+}
+.contact{
+    width: 100%;
+  text-align: end;
+}
+.nav-links :hover a{
+    color:#645cff;
+    
+}
+.nav-links-1 :hover a{
+    color: #645cff;
+    
+}
+.contact{
+    width: 100%;
+  text-align: end;
+  
+}
+
+  .contact button{
+    
+    background-color: #645cff;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 33px;
+    font-size: 18px;
+    cursor: pointer;
+} 
+.contact-1{
+    width: 100%;
+  text-align: center;
+    
+
+    border-top: 1px solid gray;
+
+}
+
+.contact-1 button{
+    
+    background-color: #645cff;
+    border: 0;
+    outline: 0;
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 33px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+ button:hover{
+
+    background-color: #1b158a;
+}
+
+.third-container{
+    
+    margin: 4% 0;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 2rem 1rem;
+}
+.recipe-container
+{  order: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.third-container h4{
+    font-family: 'Nunito',sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 2%;
+  
+}
+
+.recipe{
+
+    
+    display: grid;
+}
+.recipe a{
+    margin-top: 8px;
+    
+    color: gray;
+
+    font-size: 18px;
+
+}
+.recipe a:hover{
+    color: #645cff;
+}
+
+
+
+.recipes  img{
+
+
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    
+    border-radius: 2%;
+}
+
+.recipes-list{
+    
+    order: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 1rem;
+    
+}
+.recipes{
+    display: block;
+    letter-spacing: 1px;
+    
+}
+.recipes h5{
+    font-family: 'Nunito',sans-serif;
+    font-size: 1.15rem;
+    color: black;
+    font-weight: 400;
+}
+.recipes p{
+    
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    font-weight: 300;
+    color: rgb(118, 117, 117);
+}
+
+ .last-container{
+    width: 100%;
+
+    display: flex;
+    background-color: black;
+    height: 4rem;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    }
+    .first-p{
+
+    color: white;
+    }
+    .logo{
+        color: #645cff;
+    }
+    .last-container a{
+        color: #645cff;
+    }
+
+    @media(max-width:1280px)
+{
+    body{
+        margin:1.5% 5% 0 5%;
+    }
+}
+@media(max-width:1200px)
+{
+    
+    
+    .recipes-list{
+    
+        
+        grid-template-columns: 1fr 1fr ;
+        
+        
+    }
+}
+@media(max-width:991px)
+{
+    
+    .third-container{
+        grid-template-columns: 1fr;
+    }
+    /* .recipes-list{
+    
+        
+        grid-template-columns: 1fr 1fr;
+        
+        
+    } */
+    .recipe-container
+{  
+    order: 3;
+    
+    
+   
+}
+.recipe{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+    
+}
+    @media(max-width:960px)
+    {
+        
+        .active{
+            display: block;
+            
+        }
+        .nav-links{
+            display:none;
+        }
+        .btn{
+         display: block;   
+        }
+        
+        .main-container-img{
+            width: 100%;
+            justify-content: space-between;
+        }
+    
+    }
+    @media(max-width:750px)
+    {
+    
+        .nav-links-1{
+            margin-top: 10%;
+        }
+        .nav-links-1 li{
+            
+            padding: 2.5%;
+        }
+    }
+    @media(max-width:550px)
+    {
+    
+        .nav-links-1{
+            margin-top: 10%;
+        }
+        .nav-links-1 li{
+            
+            padding: 5%;
+        }
+}
+@media(max-width:575px)
+{
+    
+    .last-container{
+        margin-top: 12%;
+    }
+
+    .third-container{
+        grid-template-columns: 1fr;
+        margin-top: 13%;
+    }
+    .recipes-list{
+    
+        
+        grid-template-columns: 1fr ;
+        
+        
+    }
+}
+@media(max-width:484px)
+{
+   
+    .nav-links-1{
+        margin-top: 7%;
+    }
+    .nav-links-1 li{
+        
+        padding: 4%;
+    }
+}
